@@ -32,7 +32,7 @@ function hello_goat_get_goat() {
 	http://www.cheeseslave.com/wp-content/uploads/2009/02/cs_goat.jpg";
 
 	// Here we split it into lines (Goats)
-	$goats = explode( "\n", $lyrics );
+	$goats = explode( "\n", $goats );
 
 	// And then randomly choose a line (Goat)
 	return wptexturize( $goats[ mt_rand( 0, count( $goats ) - 1 ) ] );
