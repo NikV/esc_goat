@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: esc_goat
- * Description: Escape Goat
+ * Description: Escape Goat, need I say more?
  * Version: 1.0
  * Author: Nikhil Vimal
  * Author URI: nik.techvoltz.com
@@ -10,6 +10,8 @@
 
 /**
  * Escape Goat
+ *
+ * In Soviet Russia, Goat Escape YOU!
  */
 function esc_goat($text) {
 	$text = strip_tags($text);
