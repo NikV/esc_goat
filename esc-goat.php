@@ -65,3 +65,12 @@ function goat_css() {
 }
 
 add_action( 'admin_head', 'goat_css' );
+
+function goat_mode() {
+	if ( defined( 'GOAT_MODE' ) && GOAT_MODE ) {
+		echo wp_oembed_get( 'https://www.youtube.com/watch?v=wfpL6_0OBuA' );
+	}
+
+
+}
+add_action('wp_head', 'goat_mode');
