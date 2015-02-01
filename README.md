@@ -1,4 +1,4 @@
-# esc_goat
+# esc_goat()
 
 I Bring you esc_goat. A WordPress plugin that will change everything.
 
