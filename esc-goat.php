@@ -13,7 +13,7 @@
  *
  * In Soviet Russia, Goat Escape YOU!
  */
-function esc_goat($text) {
+function esc_goat( $text ) {
 	$text = strip_tags($text);
 	$text = str_replace($text, "Goat", $text);
 	echo $text;
@@ -66,11 +66,13 @@ function goat_css() {
 
 add_action( 'admin_head', 'goat_css' );
 
+/**
+ * GOAT MODE ACTIVATED
+ */
 function goat_mode() {
+
 	if ( defined( 'GOAT_MODE' ) && GOAT_MODE ) {
 		echo wp_oembed_get( 'https://www.youtube.com/watch?v=wfpL6_0OBuA' );
 	}
 
-
 }
-add_action('wp_head', 'goat_mode');
