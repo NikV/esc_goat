@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: esc_goat
+ * Plugin Name: esc_goat()
  * Description: Escape Goat, need I say more?
  * Version: 1.0
  * Author: Nikhil Vimal
