@@ -26,13 +26,12 @@ function esc_goat($text) {
  */
 function hello_goat_get_goat() {
 	//ALL the Goats
-	$goats = "http://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg
-	https://www.sciencenews.org/sites/default/files/main/blogposts/sci_Goats_Go_Inspecting_wikimedia_commons.jpg
-	http://upload.wikimedia.org/wikipedia/commons/b/b5/Mountain_Goat_USFWS.jpg
-	http://www.cheeseslave.com/wp-content/uploads/2009/02/cs_goat.jpg";
-
-	// Here we split it into lines (Goats)
-	$goats = explode( "\n", $goats );
+	$goats = array(
+		'http://upload.wikimedia.org/wikipedia/commons/b/b2/Hausziege_04.jpg',
+		'https://www.sciencenews.org/sites/default/files/main/blogposts/sci_Goats_Go_Inspecting_wikimedia_commons.jpg',
+		'http://upload.wikimedia.org/wikipedia/commons/b/b5/Mountain_Goat_USFWS.jpg',
+		'http://www.cheeseslave.com/wp-content/uploads/2009/02/cs_goat.jpg',
+	);
 
 	// And then randomly choose a line (Goat)
 	return wptexturize( $goats[ mt_rand( 0, count( $goats ) - 1 ) ] );
