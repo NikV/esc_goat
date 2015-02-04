@@ -14,9 +14,8 @@
  * In Soviet Russia, Goat Escape YOU!
  */
 function esc_goat( $text ) {
-	$text = strip_tags($text);
-	$text = str_replace($text, "Goat", $text);
-	echo $text;
+	$text = preg_replace('/(\w+)/i', "Goat", $text);
+	return $text;
 }
 
 /**
@@ -31,7 +30,7 @@ function hello_goat_get_goat() {
 	http://upload.wikimedia.org/wikipedia/commons/b/b5/Mountain_Goat_USFWS.jpg
 	http://www.cheeseslave.com/wp-content/uploads/2009/02/cs_goat.jpg";
 
-	// Here we split it into lines (Goats)
+	// Here we explode Goats
 	$goats = explode( "\n", $goats );
 
 	// And then randomly choose a line (Goat)
