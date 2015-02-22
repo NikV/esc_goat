@@ -5,7 +5,7 @@
  * Version: 1.0
  * Author: Nikhil Vimal
  * Author URI: nik.techvoltz.com
- * License: GPL2
+ * License: GoatPL2
  */
 
 /**
