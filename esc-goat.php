@@ -30,6 +30,7 @@ function hello_goat_get_goat() {
 		'https://www.sciencenews.org/sites/default/files/main/blogposts/sci_Goats_Go_Inspecting_wikimedia_commons.jpg',
 		'http://upload.wikimedia.org/wikipedia/commons/b/b5/Mountain_Goat_USFWS.jpg',
 		'http://www.cheeseslave.com/wp-content/uploads/2009/02/cs_goat.jpg',
+		'http://media3.giphy.com/media/VVmsz90gRsMOQ/200.gif',
 	);
 	// And then randomly choose a line (Goat)
 	return wptexturize( $goats[ mt_rand( 0, count( $goats ) - 1 ) ] );
@@ -37,7 +38,7 @@ function hello_goat_get_goat() {
 
 function hello_goat() {
 	$get_goat = hello_goat_get_goat();
-	echo "<a href='$get_goat'><img id='dolly' alt='$get_goat' src='$get_goat' height='42' width='42'></img></a>";
+	echo "<a href='$get_goat'><img id='hello-goat' alt='$get_goat' src='$get_goat' height='42' width='42'></img></a>";
 }
 
 // Now we set that function up to execute when the admin_notices action is called
@@ -50,7 +51,7 @@ function goat_css() {
 
 	echo "
 	<style type='text/css'>
-	#dolly {
+	#hello-goat {
 		float: $x;
 		padding-$x: 15px;
 		padding-top: 5px;
