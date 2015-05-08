@@ -6,7 +6,10 @@ I Bring you esc_goat. A WordPress plugin that will change everything.
 
 # Documentation 
 
-The one function to rule them all: esc_goat()
+- The one function to rule them all: esc_goat()
+- Also Includes a Goat mode
+- Also includes a Hello Goat part 
+
 
 # License 
 
