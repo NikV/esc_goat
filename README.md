@@ -8,7 +8,7 @@ I Bring you esc_goat. A WordPress plugin that will change everything.
 
 - The one function to rule them all: esc_goat()
 - Also Includes a Goat mode
-- Also includes a Hello Goat part 
+- Also bundled with "Hello Goat". A next generation plugin
 
 
 # License 
